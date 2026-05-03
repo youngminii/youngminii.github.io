@@ -16,10 +16,11 @@
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="container">
-					<li><a href="#About Me">About Me</a></li>
-					<li><a href="#Publications">Publications</a></li>
-					<li><a href="#Projects">Projects</a></li>
-					<li><a href="#CV">CV</a></li>
+					<!-- href 대신 onclick을 사용해 화면을 전환합니다 -->
+					<li><a href="javascript:void(0);" onclick="showSection('About Me')">About Me</a></li>
+					<li><a href="javascript:void(0);" onclick="showSection('Publications')">Publications</a></li>
+					<li><a href="javascript:void(0);" onclick="showSection('Projects')">Projects</a></li>
+					<li><a href="javascript:void(0);" onclick="showSection('CV')">CV</a></li>
 				</ul>
 			</nav>
 
@@ -326,6 +327,40 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- 화면 전환 마법 코드 시작 -->
+		<style>
+			/* 화면이 켜질 때 부드럽게 나타나는 애니메이션 효과 */
+			article.wrapper {
+				animation: fadeIn 0.4s ease-in-out;
+			}
+			@keyframes fadeIn {
+				from { opacity: 0; transform: translateY(10px); }
+				to { opacity: 1; transform: translateY(0); }
+			}
+		</style>
+
+		<script>
+			function showSection(sectionId) {
+				// 1. 모든 섹션을 화면에서 숨깁니다.
+				document.getElementById('about').style.display = 'none';
+				document.getElementById('publications').style.display = 'none';
+				document.getElementById('projects').style.display = 'none';
+				document.getElementById('cv').style.display = 'none';
+
+				// 2. 클릭한 버튼의 섹션만 짠! 하고 나타나게 합니다.
+				document.getElementById(sectionId).style.display = 'block';
+				
+				// 3. 화면이 바뀌면 스크롤을 맨 위로 살짝 올려줍니다.
+				window.scrollTo(0, 0);
+			}
+
+			// 4. 홈페이지에 처음 접속했을 때 'about' 화면만 보이게 설정합니다.
+			window.onload = function() {
+				showSection('about');
+			};
+		</script>
+		<!-- 화면 전환 마법 코드 끝 -->
 
 	</body>
 </html>
