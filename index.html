@@ -23,79 +23,104 @@
 				</ul>
 			</nav>
 
-		<!-- 1. About ME -->
-							<div style="text-align: left;"> <!-- 전체 왼쪽 정렬 시작 -->
+		<!-- Home -->
+			<article id="About Me" class="wrapper style1">
+				<div class="container"> <!-- 화면 중앙 정렬 및 양옆 여백을 만들어주는 아주 중요한 태그입니다 -->
+					<div style="text-align: left; padding: 0 10px;">
+
+						<!-- 0. 프로필 사진 및 소속, 링크 버튼 (가로 배치) -->
+						<div style="display: flex; align-items: center; gap: 40px; margin-bottom: 50px; flex-wrap: wrap;">
+							<!-- 동그라미 프로필 사진 -->
+							<div style="flex-shrink: 0;">
+								<img src="images/pic00.jpg" alt="Youngmin Seo" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+							</div>
+							
+							<!-- 이름, 소속 및 버튼 -->
+							<div>
+								<h2 style="margin: 0 0 10px 0; font-size: 2.5em; color: #333;"><strong>Youngmin Seo</strong></h2>
+								<p style="margin: 0 0 20px 0; font-size: 1.1em; color: #555; line-height: 1.6;">
+									<strong style="color: #222;">B.S candidate in CnCS Lab</strong><br>
+									Kwangwoon University
+								</p>
 								
-								<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">About ME</h3>
-								<p style="margin-bottom: 40px;">I am Youngmin Seo, a B.S. candidate in the Cryptography & Cyber Security Lab (<a href="https://sites.google.com/view/cncslab-kwu/cncs-lab">CnCS Lab</a>) at the Department of Computer Information Engineering, Kwangwoon University, advised by Professor Jihyeon Ryu.</p>
-
-								<!-- 2. Research Interests (둥근 태그 블록 효과) -->
-								<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Research Interests</h3>
-								<div style="margin-bottom: 40px;">
-									<span style="display: inline-block; background-color: #f4f5f7; border: 1px solid #e1e4e8; border-radius: 20px; padding: 8px 16px; margin: 0 8px 8px 0; font-size: 0.9em; color: #333;">Cyber Security & AI Security</span>
-									<span style="display: inline-block; background-color: #f4f5f7; border: 1px solid #e1e4e8; border-radius: 20px; padding: 8px 16px; margin: 0 8px 8px 0; font-size: 0.9em; color: #333;">Authentication Protocols</span>
-									<span style="display: inline-block; background-color: #f4f5f7; border: 1px solid #e1e4e8; border-radius: 20px; padding: 8px 16px; margin: 0 8px 8px 0; font-size: 0.9em; color: #333;">Data Privacy</span>
+								<!-- 링크 버튼들 -->
+								<div style="display: flex; gap: 12px; flex-wrap: wrap;">
+									<!-- Email 버튼 -->
+									<a href="mailto:여기에이메일주소@gmail.com" style="display: inline-block; background-color: #333; color: #fff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.9em; box-shadow: none;">
+										<i class="fa fa-envelope" style="margin-right: 5px;"></i> Email
+									</a>
+									<!-- GitHub 버튼 -->
+									<a href="https://github.com/여기에깃허브아이디" target="_blank" style="display: inline-block; background-color: #24292e; color: #fff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.9em; box-shadow: none;">
+										<i class="fab fa-github" style="margin-right: 5px;"></i> GitHub
+									</a>
+									<!-- Google Scholar 버튼 -->
+									<a href="여기에구글스칼라링크" target="_blank" style="display: inline-block; background-color: #4285f4; color: #fff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.9em; box-shadow: none;">
+										<i class="fa fa-graduation-cap" style="margin-right: 5px;"></i> Google Scholar
+									</a>
 								</div>
+							</div>
+						</div>
 
-								<!-- 3. Education (좌우 2단 배열 효과) -->
-								<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Education</h3>
-								<div style="display: flex; margin-bottom: 40px;">
-									<div style="flex: 0 0 150px; font-weight: bold; color: #666; font-size: 0.9em;">
-										Mar 2024 - Present
-									</div>
-									<div style="flex: 1;">
-										<h4 style="margin: 0; color: #222;">B.S in Computer Information Engineering</h4>
-										<p style="margin: 5px 0 0 0; color: #222;">Kwangwoon University</p>
-									</div>
-								</div>
+						<!-- 1. About ME -->
+						<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">About ME</h3>
+						<p style="margin-bottom: 40px;">I am Youngmin Seo, a B.S. candidate in the Cryptography & Cyber Security Lab (<a href="https://sites.google.com/view/cncslab-kwu/cncs-lab" target="_blank">CnCS Lab</a>) at the Department of Computer Information Engineering, Kwangwoon University, advised by Professor Jihyeon Ryu.</p>
 
-								<!-- 4. Leadership & Activities -->
-								<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Leadership & Activities</h3>
-								<div style="display: flex; margin-bottom: 40px;">
-									<div style="flex: 0 0 150px; font-weight: bold; color: #666; font-size: 0.9em;">
-										2025.01 - 2025.12
-									</div>
-									<div style="flex: 1;">
-										<h4 style="margin: 0; color: #222;">Vice President of the Student Council</h4>
-										<p style="margin: 5px 0 0 0; color: #222;">Department of Computer Information Engineering, Kwangwoon University</p>
-									</div>
-								</div>
+						<!-- 2. Research Interests -->
+						<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Research Interests</h3>
+						<div style="margin-bottom: 40px;">
+							<span style="display: inline-block; background-color: #f4f5f7; border: 1px solid #e1e4e8; border-radius: 20px; padding: 8px 16px; margin: 0 8px 8px 0; font-size: 0.9em; color: #333;">Cyber Security & AI Security</span>
+							<span style="display: inline-block; background-color: #f4f5f7; border: 1px solid #e1e4e8; border-radius: 20px; padding: 8px 16px; margin: 0 8px 8px 0; font-size: 0.9em; color: #333;">Authentication Protocols</span>
+							<span style="display: inline-block; background-color: #f4f5f7; border: 1px solid #e1e4e8; border-radius: 20px; padding: 8px 16px; margin: 0 8px 8px 0; font-size: 0.9em; color: #333;">Data Privacy</span>
+						</div>
 
-								<!-- 5. Honors & Awards (아이콘 추가) -->
-								<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Honors & Awards</h3>
-								<div style="display: flex; margin-bottom: 15px;">
-									<div style="flex: 0 0 150px; font-weight: bold; color: #666; font-size: 0.9em;">
-										Fall 2024 <!-- 시기에 맞게 수정하세요 -->
-									</div>
-									<div style="flex: 1;">
-										<h4 style="margin: 0; color: #222;">Academic Excellence Scholarship</h4>
-										<p style="margin: 5px 0 0 0; color: #222; font-size: 0.9em;">Kwangwoon University</p>
-									</div>
-								</div>
-								<div style="display: flex; margin-bottom: 40px;">
-									<div style="flex: 0 0 150px; font-weight: bold; color: #666; font-size: 0.9em;">
-										Fall 2025 <!-- 시기에 맞게 수정하세요 -->
-									</div>
-									<div style="flex: 1;">
-										<h4 style="margin: 0; color: #222;">Frontier Scholarship</h4>
-										<p style="margin: 5px 0 0 0; color: #222; font-size: 0.9em;">Kwangwoon University</p>
-									</div>
-								</div>
+						<!-- 3. Education -->
+						<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Education</h3>
+						<div style="display: flex; margin-bottom: 40px;">
+							<div style="flex: 0 0 150px; font-weight: bold; color: #666; font-size: 0.9em;">
+								Mar 2024 - Present
+							</div>
+							<div style="flex: 1;">
+								<h4 style="margin: 0; color: #222;">B.S in Computer Information Engineering</h4>
+								<p style="margin: 5px 0 0 0; color: #555;">Kwangwoon University</p>
+							</div>
+						</div>
 
-								<!-- 6. Certifications (카드형 블록 효과) -->
-								<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Certifications</h3>
-								
-								<div style="border: 1px solid #e1e4e8; border-radius: 12px; padding: 20px; margin-bottom: 15px; background-color: #f8faff; display: flex; justify-content: space-between; align-items: center;">
-									<div>
-										<h4 style="margin: 0; color: #222;">여기에 자격증 이름 (예: 정보보안기사)</h4>
-										<p style="margin: 5px 0 0 0; font-size: 0.9em; color: #555;">발급 기관 (예: KCA)</p>
-									</div>
-									<div style="color: #666; font-size: 0.9em;">
-										<i class="fa fa-calendar"></i> Nov 2025 <!-- 취득일 -->
-									</div>
-								</div>
+						<!-- 4. Leadership & Activities -->
+						<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Leadership & Activities</h3>
+						<div style="display: flex; margin-bottom: 40px;">
+							<div style="flex: 0 0 150px; font-weight: bold; color: #3b5998; font-size: 0.9em;">
+								2025.01 - 2025.12
+							</div>
+							<div style="flex: 1;">
+								<h4 style="margin: 0; color: #222;">Vice President of the Student Council</h4>
+								<p style="margin: 5px 0 0 0; color: #555;">Department of Computer Information Engineering, Kwangwoon University</p>
+							</div>
+						</div>
 
-							</div> <!-- 전체 왼쪽 정렬 끝 -->
+						<!-- 5. Honors & Awards -->
+						<h3 style="border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Honors & Awards</h3>
+						<div style="display: flex; margin-bottom: 15px;">
+							<div style="flex: 0 0 150px; font-weight: bold; color: #666; font-size: 0.9em;">
+								Spring 2025
+							</div>
+							<div style="flex: 1;">
+								<h4 style="margin: 0; color: #222;"><i class="fa fa-award" style="color: #4a69bd;"></i> Academic Excellence Scholarship</h4>
+								<p style="margin: 5px 0 0 0; color: #555; font-size: 0.9em;">Kwangwoon University</p>
+							</div>
+						</div>
+						<div style="display: flex; margin-bottom: 40px;">
+							<div style="flex: 0 0 150px; font-weight: bold; color: #666; font-size: 0.9em;">
+								Fall 2024
+							</div>
+							<div style="flex: 1;">
+								<h4 style="margin: 0; color: #222;"><i class="fa fa-medal" style="color: #4a69bd;"></i> Frontier Scholarship</h4>
+								<p style="margin: 5px 0 0 0; color: #555; font-size: 0.9em;">Kwangwoon University</p>
+							</div>
+						</div>
+
+					</div> 
+				</div>
+			</article>
 
 		<!-- Work -->
 			<article id="Publication" class="wrapper style2">
